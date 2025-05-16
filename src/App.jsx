@@ -33,10 +33,10 @@ export default function CodeEditorWithTerminal() {
     <div className="p-4 flex flex-col items-center">
       <Card className="w-full max-w-3xl">
         <CardContent>
-          <Tabs defaultValue="editor">
+          {/* <Tabs defaultValue="editor"> */}
             <TabsList>
               <TabsTrigger value="editor">Editor</TabsTrigger>
-              <TabsTrigger value="terminal">Terminal</TabsTrigger>
+              {/* <TabsTrigger value="terminal">Terminal</TabsTrigger> */}
             </TabsList>
 
             <TabsContent value="editor">
@@ -58,7 +58,8 @@ export default function CodeEditorWithTerminal() {
                 {output ? <pre>{output}</pre> : "Output will appear here."}
               </div>
             </TabsContent>
-          </Tabs>
+
+          {/* </Tabs> */}
         </CardContent>
       </Card>
     </div>
